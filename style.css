@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    font-family: 'Cinzel', serif;
+}
+/*Nav*/
+nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+nav a{
+    text-decoration: none;
+    color: #3F3F3F;
+    font-family: 'Cinzel', serif;
+}
+
+.maincontent {
+    display: flex;
+    padding: 2px 0px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#email {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #3F3F3F;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: #3F3F3F;
+}
+
+#menu ul{
+    display: contents;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #3F3F3F;
+}
+/*Nav*/
+
+/*section1*/
+.presentation{
+    display: flex;
+    height: fit-content;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: linear-gradient(135deg, #E8E8E8 0%, #FFF 100%);
+    box-shadow: 8px 8px 20px 0px rgba(215, 215, 215, 0.90), -8px -8px 16px 0px rgba(255, 255, 255, 0.90), 8px -8px 16px 0px rgba(215, 215, 215, 0.20), -8px 8px 16px 0px rgba(215, 215, 215, 0.20), -1px -1px 2px 0px rgba(215, 215, 215, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+}
+
+#moi{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#moi img{
+    width: 283px;
+    height: 283px;
+    border-radius: 186.184px;
+}
+
+#moi h1{
+    width: 750px;
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+}
+
+@media (max-width: 1250px) {
+    #moi{
+        display: flex;
+        width: 928px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    #moi h1{
+        width: 650px;
+        color: #000;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+}
+/*section1*/
+
+/* Slider*/
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slider {
+    height: 200px;
+    margin: 50px 100px;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.slider::before, .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+/* Slider*/
+
+#spline{
+    display: flex;
+    height: 600px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: linear-gradient(135deg, #E8E8E8 0%, #FFF 100%);
+    box-shadow: 8px 8px 20px 0px rgba(215, 215, 215, 0.90), -8px -8px 16px 0px rgba(255, 255, 255, 0.90), 8px -8px 16px 0px rgba(215, 215, 215, 0.20), -8px 8px 16px 0px rgba(215, 215, 215, 0.20), -1px -1px 2px 0px rgba(215, 215, 215, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+}
+
+
+.text {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Cv*/
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#cv{
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: linear-gradient(135deg, #E8E8E8 0%, #FFF 100%);
+    box-shadow: 8px 8px 20px 0px rgba(215, 215, 215, 0.90), -8px -8px 16px 0px rgba(255, 255, 255, 0.90), 8px -8px 16px 0px rgba(215, 215, 215, 0.20), -8px 8px 16px 0px rgba(215, 215, 215, 0.20), -1px -1px 2px 0px rgba(215, 215, 215, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+
+}
+/*Cv*/
+
+/*Hobby*/
+#titre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+}
+
+#figma{
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: linear-gradient(135deg, #E8E8E8 0%, #FFF 100%);
+    box-shadow: 8px 8px 20px 0px rgba(215, 215, 215, 0.90), -8px -8px 16px 0px rgba(255, 255, 255, 0.90), 8px -8px 16px 0px rgba(215, 215, 215, 0.20), -8px 8px 16px 0px rgba(215, 215, 215, 0.20), -1px -1px 2px 0px rgba(215, 215, 215, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+
+}
+#figma img{
+    height: 300px;
+}
+
+@media (max-width: 1250px) {
+
+    #figma{
+        flex-direction: column;
+    }
+}
+/*Hobby*/
+
+/*form*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*form*/
+
